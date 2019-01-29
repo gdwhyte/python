@@ -1,7 +1,7 @@
 #help https://pynative.com/python-check-user-input-is-number-or-string/
 
 from termcolor import colored, cprint, ATTRIBUTES
-#added notes
+#added notes 2
 
 cprint("hello",'red',attrs=['blink'])
 #cprint()
