@@ -1,5 +1,6 @@
 
 from termcolor import cprint
+from termcolor import ATTRIBUTES
 
 class Vehicle:
 
