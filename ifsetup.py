@@ -1,30 +1,29 @@
 #help https://pynative.com/python-check-user-input-is-number-or-string/
 
-from termcolor import colored, cprint, ATTRIBUTES
-#added notes 2
-
+from termcolor import colored, cprint
+import time 
+#dghbdbhdxgbv
 cprint("hello",'red',attrs=['blink'])
 #cprint()
-myvar = float(input(':'))
-#myvar = input('imput a number:')
-
-try:
-    val =float(myvar)
-except ValueError:
-    print("not a number!")
-    myvar = float(input('Try again:'))
+myvar = 0
+goalvar = 50
 bigvar = "myvar is bigger"
 smallvar = "myvar is smaller"
 
-def funcname(self, parameter_list):
-    pass
-
-def checkit():
-    if type(myvar) == str: print("no!")
-    else: 
-        if myvar>1:print(bigvar)
-        else: print(smallvar) 
+def checkit(): 
+    try:
+        #val =float(myvar)
+        myvar = float(input('imput a number:'))
+        if myvar>goalvar:
+            print(bigvar)
+        else: 
+            print(smallvar)
+    except ValueError:
+        print("That's not a number!")
+        time.sleep(2)
+        print("lets try that again..")
+        time.sleep(2)
+        #myvar = float(input('Try again:'))
+        checkit() 
 
 checkit()
-#if type(myvar) == str: print("no!")
-
